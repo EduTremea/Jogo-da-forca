@@ -6,7 +6,7 @@ system("cls")
 while True:
     print("----------------------------------")
     print("---Bem vindo ao jogo da Forca!---")
-    print("-------do Luiz e Pablo----------")
+    print("-------De Luiz e Pablo----------")
 
     jogador = str(input("Nome do Jogador? "))
     carrasco = str(input("Nome do Carrasco? "))
