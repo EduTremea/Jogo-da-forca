@@ -1,7 +1,9 @@
 #Luiz Eduardo Treméa e Pablo Bortoluzzi
 from os import system
+from functions import os
+
 import time
-system("cls")
+system("limpatela")
 
 while True:
     print("----------------------------------")
@@ -11,10 +13,10 @@ while True:
     jogador = str(input("Nome do Jogador? "))
     carrasco = str(input("Nome do Carrasco? "))
 
-    system("cls")
+    system("limpatela")
 
     palavra_secreta = str(input("Escolha a palavra secreta: ")).upper()
-    system("cls")
+    system("limpatela")
     letras_acertadas= [ '_' for letra in palavra_secreta ]
     enforcou = False
     acertou  = False
@@ -30,7 +32,7 @@ while True:
         else:
             print("A dica deve conter apenas letras, tente novamente.")
             time.sleep(3)
-            system("cls")
+            system("limpatela")
             print(letras_acertadas)
 
     while True:
@@ -41,7 +43,7 @@ while True:
         else:
             print("A dica deve conter apenas letras, tente novamente.")
             time.sleep(3)
-            system("cls")
+            system("limpatela")
             print(letras_acertadas)
 
     while True:
@@ -52,7 +54,7 @@ while True:
         else:
             print("A dica deve conter apenas letras, tente novamente.")
             time.sleep(3)
-            system("cls")
+            system("limpatela")
             print(letras_acertadas)
 
     while(not enforcou and not acertou):
@@ -96,7 +98,7 @@ while True:
             file.write(palavra_secreta)
             file.close()
         
-        system("cls")
+        system("limpatela")
         print(letras_acertadas)
 
     if(acertou):
@@ -119,7 +121,7 @@ while True:
         print(" ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ")
 
     else:
-        system("cls")
+        system("limpatela")
         print("Que pena, você foi enforcado!")
         print("A palavra era {}".format(palavra_secreta))
         print("    ████▀░░░░░░░░░░░░░░░░░▀████")
@@ -140,7 +142,7 @@ while True:
         print("              Game Over        ")
         
         time.sleep(5)
-        system("cls")
+        system("limpatela")
 
     print("Para Jogar novamente digite 1" )
     print("Para sair digite 0")
